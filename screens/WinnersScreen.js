@@ -9,7 +9,6 @@ class WinnersScreen extends React.Component {
   };
 
   render() {
-    console.log(this.props.game.winners);
     return (
       <ScrollView>
         <View style = {styles.container}>

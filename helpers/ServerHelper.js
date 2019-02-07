@@ -21,7 +21,6 @@ const setupSocket = (dispatch) => {
 
   //Handle servers push response
   socket.on(actionTypes.PUSH_SUCCESS, (data) => {
-    console.log(data);
     dispatch(pushSuccess(data));
   });
 
