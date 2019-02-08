@@ -15,7 +15,7 @@ const gameReducer = (state = INITIAL_STATE, action) => {
     case actionTypes.PUSH_SUCCESS:
       const pushResponse = action.data;
       //If prize was won, don't make button pushable
-      const pushable = (pushResponse.prize == prizes.NONE ? true : false);
+      const pushable = (pushResponse.prize == prizes.NONE);
       return {...state, pushable: pushable, pushResponse : pushResponse};
     case actionTypes.CONNECTION_SUCCESS:
       return {...state, pushable: true};
