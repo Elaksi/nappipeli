@@ -2,6 +2,7 @@ import { Alert } from 'react-native';
 import { takeEvery, put, call } from 'redux-saga/effects'
 
 import actionTypes from './constants/ActionTypes';
+import prizes from './constants/Prizes';
 
 export default handleSuccessfulPush = function* handleSuccessfulPush(params){
   yield takeEvery(actionTypes.PUSH_SUCCESS, function*(action){
